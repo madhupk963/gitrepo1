@@ -6,3 +6,4 @@ do
 	echo $li
 	echo "This is a line"
 done < $file
+echo "i have changed in Bmadhu1"
