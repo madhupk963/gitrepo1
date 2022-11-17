@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "enter first number"
+echo "enter first number ! to do calculation"
 read a
 echo "enter second number"
 read b
