@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "enter first number"
+echo "enter first number" int or float?
 read a
 echo "enter second number"
 read b
