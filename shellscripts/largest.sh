@@ -7,6 +7,7 @@ echo "Enter the third number"
 read c
 echo "Enter the fourth number"
 read d
+echo "comprasion"
 if [ $a -gt $b ];
 then
 	if [ $a -gt $c ];
