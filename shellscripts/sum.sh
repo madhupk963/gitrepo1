@@ -1,5 +1,6 @@
 #!/bin/bash
 echo " enter the number"
+echo " should i enter?"
 read n
 n1=$n
 result=0
