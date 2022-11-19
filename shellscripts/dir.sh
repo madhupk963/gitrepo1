@@ -8,3 +8,4 @@ cd $dir
 ls -l
 pwd
 exec bash
+echo "rebse demo"
