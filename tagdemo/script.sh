@@ -3,11 +3,4 @@ ls > file1.txt
 echo " current files in the folder is"
 cat file1.txt
 echo  "changedd in $0 file"
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-bsjffbkuaskufhuksdhfuhsdkhdsh
-=======
-sadhshdhsdhkskdkjkjdnk
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+

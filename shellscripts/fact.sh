@@ -1,5 +1,6 @@
 #!/bin/bash
 echo " enter the number"
+echo "i am editing your file madhu"
 read n
 n1=$n
 result=1
