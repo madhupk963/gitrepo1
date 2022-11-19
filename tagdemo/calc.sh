@@ -7,6 +7,7 @@ c=$(echo  "$a + $b" | bc)
 s=$(echo "$a - $b"  | bc)
 m=$(echo "$a * $b" | bc)
 d=$(echo "$a / $b" | bc)
+echo "*****Basic calci*****"
 echo "addition of two numbers: $c"
 echo "substaction of two numbers: $s"
 echo "multiplication of two numbers: $m"

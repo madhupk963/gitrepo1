@@ -1,4 +1,5 @@
 #!/bib/bash
+echo "palindrome"
 echo "Enter the number"
 read num
 sum=0
