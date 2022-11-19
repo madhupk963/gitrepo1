@@ -4,3 +4,4 @@ for i in $num
 do
 	echo $i
 done
+echo "editted by madhu"

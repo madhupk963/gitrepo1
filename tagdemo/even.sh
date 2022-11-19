@@ -2,7 +2,7 @@
 echo "Enter a number:"
 read n
 rem=`expr $n % 2`
-echo "even or odd demo"
+echo "madhu"
 if [ $rem -eq 0 ]
 then
 	echo "$n is even number"

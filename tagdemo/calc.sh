@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "enter first number"
+echo "enter first number ! to do calculation"
 read a
 echo "enter second number"
 read b
@@ -12,3 +12,4 @@ echo "addition of two numbers: $c"
 echo "substaction of two numbers: $s"
 echo "multiplication of two numbers: $m"
 echo  "division of numbers:  $d"
+Yeah madhu unable to edit

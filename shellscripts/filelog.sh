@@ -10,3 +10,4 @@ do
 		echo $line >> file3
 	fi
 done < $file
+echo "editted by madhu"
