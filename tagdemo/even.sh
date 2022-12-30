@@ -10,4 +10,4 @@ then
 else
 	echo "$n is Odd number"
 fi
-echo "job with poll scm"
+echo "job with webhook"
