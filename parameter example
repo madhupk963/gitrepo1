@@ -1,0 +1,43 @@
+def deploy(apiname){
+    dir('/var/lib/jenkins/workspace/job2'){
+                            sh 'ls -l'
+                            echo "deploy api1"
+                            echo "${apiname}"
+                        }
+}
+pipeline {
+    agent any
+
+    stages {
+        stage('clone repo'){
+            steps{
+                    echo "${params.reponame}"
+                    sh "git clone https://github.com/madhupk963/${params.reponame}.git"
+                    sh 'pwd' 
+            }
+            
+        }
+        stage('Hello') {
+            steps {
+                script{
+                    if(params.api1){
+                      def apiname = "api1"
+                      deploy(apiname)  
+                        
+               }
+               if(params.api2){
+                   echo "api2 value is true"
+               }
+               if(params.api3){
+                   dir('/var/lib/jenkins/workspace/job2'){
+                            sh 'ls -l'
+                            echo "deploy api3"
+                        }
+                  
+               }
+                }
+               
+            }
+        }
+    }
+}
