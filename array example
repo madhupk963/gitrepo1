@@ -1,0 +1,51 @@
+def apilist = []
+def deploy(apiname){
+    echo "am from deploy"
+    echo "${apiname}"
+}
+def backup(apiname){
+    echo "am from backup"
+    echo "${apiname}"
+}
+pipeline {
+    agent any
+    stages {
+        stage('get array values') {
+            steps {
+                script{
+                    if(params.api1){
+                        def apiname = "Arthimatic"
+                        apilist.add(apiname)
+                    }
+                    if(params.api2){
+                        def apiname = "Algebra"
+                        apilist.add(apiname)
+                    }
+                    if(params.api3){
+                        def apiname = "Thingometri"
+                        apilist.add(apiname)
+                    }
+                    if(params.api4){
+                        def apiname = "Geometry"
+                        apilist.add(apiname)
+                    }
+                    if(params.api5){
+                        def apiname = "Numeric"
+                        apilist.add(apiname)
+                    }
+                    
+                }
+            }
+        }
+        stage('print array values'){
+            steps{
+                script{
+                    for(item in apilist){
+                        backup(item)
+                        deploy(item)
+                    }
+                }
+            }
+        }
+    }
+}
